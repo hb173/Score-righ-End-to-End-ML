@@ -1,12 +1,12 @@
 import os
 import sys
-path=os.path.abspath("/Users/himangshu/Documents/mlproject/src/")
+#path=os.path.abspath("/Users/himangshu/Documents/mlproject/src/")
 from flask import Flask,request,render_template
 import numpy as np
 import pandas as pd
 import sklearn
 from sklearn.preprocessing import StandardScaler
-from predict_pipeline import CustomData,PredictPipeline
+from src.predict_pipeline import CustomData,PredictPipeline
 
 application=Flask(__name__,template_folder='templates')
 
